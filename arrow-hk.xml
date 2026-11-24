@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Projects carrying the T_asb_2025-12 .. T_asb_2026-11 backports
-  (security patch 2026-11-05), served from
-  https://github.com/ArrowOS-HK (branch arrow-13.1).
--->
 <manifest>
 
   <remote name="arrowos-hk" fetch="https://github.com/ArrowOS-HK" />
@@ -113,5 +108,7 @@
   <project path="system/libufdt" name="android_system_libufdt" remote="arrowos-hk" revision="arrow-13.1" />
   <remove-project name="platform/system/nfc" />
   <project path="system/nfc" name="android_system_nfc" remote="arrowos-hk" revision="arrow-13.1" />
+  <remove-project name="vendor/arrow" />
+  <project path="vendor/arrow" name="android_vendor_arrow" remote="arrowos-hk" revision="arrow-13.1" />
 
 </manifest>
