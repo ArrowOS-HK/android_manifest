@@ -52,7 +52,6 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="arrow" />
 
   <!-- device repos -->
-  <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow-f" />
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="arrow" />
@@ -77,7 +76,6 @@
 
   <!-- framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="arrow-f" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="arrow-fe" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="arrow" />
   <project path="frameworks/native" name="android_frameworks_native" remote="arrow-f" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="arrow-f" />
@@ -166,8 +164,6 @@
   <project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="arrow" />
   <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="arrow-gitlab" />
   <project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="arrow" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="arrow-fe" />
-  <project path="packages/apps/Sharpener" name="android_packages_apps_Sharpener" remote="arrow-fe" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="arrow" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="arrow-fe" />
   <!--project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="arrow" /-->
@@ -218,7 +214,6 @@
   <project path="infrastructure/devices" name="arrow_infrastructure_devices" remote="arrow" />
 
   <!-- vendor repos -->
-  <project path="vendor/arrow" name="android_vendor_arrow" remote="arrow-fe" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="arrow-gitlab" clone-depth="1" />
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" remote="arrow" />
@@ -246,7 +241,6 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
-  <project path="vendor/support" name="android_vendor_support" remote="arrow-f" />
 
-  <include name="arrow-hk-ext.xml" />
+  <include name="arrow_hk_ext.xml" />
 </manifest>
