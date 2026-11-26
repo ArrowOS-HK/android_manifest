@@ -110,6 +110,7 @@
   <project path="system/nfc" name="android_system_nfc" remote="arrowos-hk-ext" />
   <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrowos-hk-ext" />
   <project path="packages/apps/Sharpener" name="android_packages_apps_Sharpener" remote="arrowos-hk-ext" />
+  <project path="frameworks/base/packages/arrow_sdk" name="android_arrow-sdk" remote="arrowos-hk-ext" />
   <remove-project name="platform/external/bouncycastle" />
   <project path="external/bouncycastle" name="android_external_bouncycastle" remote="arrowos-hk-ext" />
   <project path="vendor/arrow" name="android_vendor_arrow" remote="arrowos-hk-ext" />
