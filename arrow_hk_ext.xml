@@ -5,19 +5,94 @@
           fetch="https://github.com/ArrowOS-HK"
           revision="refs/heads/arrow-13.1_ext" />
 
+  <project path="bionic" name="android_bionic" remote="arrowos-hk-ext" />
+  <project path="build/make" name="android_build" remote="arrowos-hk-ext">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/development" />
+  <project path="development" name="android_development" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/aac" />
+  <project path="external/aac" name="android_external_aac" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/avb" />
+  <project path="external/avb" name="android_external_avb" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/dng_sdk" />
+  <project path="external/dng_sdk" name="android_external_dng_sdk" remote="arrowos-hk-ext" />
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/freetype" />
+  <project path="external/freetype" name="android_external_freetype" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/libhevc" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="android_external_libpng" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="arrowos-hk-ext" />
+  <remove-project name="platform/external/tremolo" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="arrowos-hk-ext" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="arrowos-hk-ext" />
   <project path="frameworks/base" name="android_frameworks_base" remote="arrowos-hk-ext" />
-
+  <project path="frameworks/native" name="android_frameworks_native" remote="arrowos-hk-ext" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="arrowos-hk-ext" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="arrowos-hk-ext" />
+  <remove-project name="platform/hardware/st/nfc" />
+  <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/apps/Car/Settings" />
+  <project path="packages/apps/Car/Settings" name="android_packages_apps_Car_Settings" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/apps/CertInstaller" />
+  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="arrowos-hk-ext" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/apps/KeyChain" />
+  <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" remote="arrowos-hk-ext" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="arrowos-hk-ext" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="arrowos-hk-ext" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="arrowos-hk-ext" />
-
-  <project path="packages/apps/Sharpener" name="android_packages_apps_Sharpener" remote="arrowos-hk-ext" />
-
-  <project path="vendor/arrow" name="android_vendor_arrow" remote="arrowos-hk-ext" />
-
-  <project path="vendor/support" name="android_vendor_support" remote="arrowos-hk-ext" />
-
+  <remove-project name="platform/packages/apps/TV" />
+  <project path="packages/apps/TV" name="android_packages_apps_TV" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/apps/TvSettings" />
+  <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" remote="arrowos-hk-ext" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
+  <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/modules/NeuralNetworks" />
+  <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" remote="arrowos-hk-ext" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="arrowos-hk-ext" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="arrowos-hk-ext" />
+  <project path="packages/modules/adb" name="android_packages_modules_adb" remote="arrowos-hk-ext" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="arrowos-hk-ext" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="arrowos-hk-ext" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="arrowos-hk-ext" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/services/BuiltInPrintService" />
+  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/services/Iwlan" />
+  <project path="packages/services/Iwlan" name="android_packages_services_Iwlan" remote="arrowos-hk-ext" />
+  <remove-project name="platform/packages/services/Mms" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" remote="arrowos-hk-ext" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="arrowos-hk-ext" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="arrowos-hk-ext" />
+  <remove-project name="platform/system/incremental_delivery" />
+  <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="arrowos-hk-ext" />
+  <remove-project name="platform/system/libfmq" />
+  <project path="system/libfmq" name="android_system_libfmq" remote="arrowos-hk-ext" />
+  <remove-project name="platform/system/libufdt" />
+  <project path="system/libufdt" name="android_system_libufdt" remote="arrowos-hk-ext" />
+  <remove-project name="platform/system/nfc" />
+  <project path="system/nfc" name="android_system_nfc" remote="arrowos-hk-ext" />
   <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrowos-hk-ext" />
-
+  <project path="packages/apps/Sharpener" name="android_packages_apps_Sharpener" remote="arrowos-hk-ext" />
   <remove-project name="platform/external/bouncycastle" />
   <project path="external/bouncycastle" name="android_external_bouncycastle" remote="arrowos-hk-ext" />
+  <project path="vendor/arrow" name="android_vendor_arrow" remote="arrowos-hk-ext" />
+  <project path="vendor/support" name="android_vendor_support" remote="arrowos-hk-ext" />
 
 </manifest>
