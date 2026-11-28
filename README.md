@@ -35,6 +35,8 @@ ro.ext.camera.front=(example 13)
 ro.ext.camera.rear=(example 48,8,2,2)
 ```
 
+Add your device photo and smartphone brand logo to the Settings overlay [like this example](https://github.com/mipa-ginkgo/device_xiaomi_ginkgo/tree/arrow-13.1/overlay/packages/apps/Settings/res/drawable).
+
 Building the System
 -------------------
  Initialize the ROM environment with the envsetup.sh script.
