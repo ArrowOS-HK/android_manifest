@@ -26,9 +26,13 @@ Before building the system, add this prop to your device system.prop.
 
 ```bash
 # Hardware Description
-ro.device.chipset=your_chipset
-ro.device.display_resolution=your_display_spec
-ro.device.colorbody_phone=your_phone_colors
+ro.ext.maintainer=(your name)
+ro.device.maintainer_link=(telegram profile link)
+ro.ext.model=(example M1908C3JH)      
+ro.ext.processor=(example Snapdragon 665)   
+ro.ext.battery=(example 4000)
+ro.ext.camera.front=(example 13)
+ro.ext.camera.rear=(example 48,8,2,2)
 ```
 
 Building the System
@@ -48,13 +52,13 @@ lunch arrow_devicecodename-buildtype
 Start compilation
 
 ```bash
-m otapackage
+mka otapackage
 ```
 
 OR
 
 ```bash
-m bacon
+mka bacon
 ```
 
 **You can also refer to our detailed guides as listed below:**
